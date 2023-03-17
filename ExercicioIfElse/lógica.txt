@@ -1,0 +1,28 @@
+1Ex.
+    1. int valor1 = informado pelo usuário;
+    2. int valor2 = informado pelo usuário;
+    3. se valor1>valor2 então escreva - o valor 1 é maior;
+    4. senão então escreva valor2 é maior;
+
+
+4Ex.
+    int nMacas;
+    double valorMacas, valorCompra
+    1. ler o n´mero de maças compradas
+    2. se nMacas>=12 então valorMacas=0.25;
+    3. senão entao valorMacas = 0.30;
+    4. valorCompra = nMacas * valorMacas;
+    5. escrever o valor da Comprar
+
+5Ex.
+    int n1, n2, n3
+    1. ler o 1º nº = n1
+    2. Ler 2º nº = n2
+    3. Ler 3º nº = n3
+    //n1<n2<n3
+    4. se (n1<n2<n3) entao escreva n1+n2+n3
+    //n1<n3<n2
+    //n2<n1<n3
+    //n2<n3<n1
+    //n3<n1<n2
+    //n3<n2<n1
