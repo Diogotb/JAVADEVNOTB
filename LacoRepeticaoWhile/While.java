@@ -18,7 +18,7 @@ public class While {
     public void adivinhar() {
         Random rd = new Random();
         int nSorteado = rd.nextInt(10);
-        boolean tenteNovamente;
+        boolean tenteNovamente=true;
         while (tenteNovamente) {
             System.out.println("Digite um Nº");
             int nDigitado = sc.nextInt();
