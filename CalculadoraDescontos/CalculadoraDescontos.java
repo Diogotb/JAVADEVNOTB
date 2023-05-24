@@ -2,7 +2,7 @@ package CalculadoraDescontos;
 
 import java.util.Scanner;
 
-public class CalculadoraDescontos {
+public class CalculadoraDes 
     Scanner sc = new Scanner(System.in);
     public void calcular20(){
         
