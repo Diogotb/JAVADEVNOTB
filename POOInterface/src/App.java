@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Quadrado figura1 = new Quadrado(6);
+        
         Retangulo figura2 = new Retangulo(4, 6);
         Trapezio figura3 = new Trapezio(10, 5, 6, 7, 7);
         System.out.println("Nome: "+figura1.getNomeFigura()

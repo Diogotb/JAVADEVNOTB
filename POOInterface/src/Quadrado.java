@@ -1,7 +1,7 @@
 public class Quadrado implements FigurasGeometricas{
     int lado;
 
-    //construtor
+    //construtor com parâmetros
     public Quadrado(int lado) {
         this.lado = lado;
     }
@@ -20,12 +20,10 @@ public class Quadrado implements FigurasGeometricas{
         int area = lado*lado;
         return area;
     }
-
     @Override
     public String getNomeFigura() {
         return "Quadrado";
     }
-
     @Override
     public double getPerimetro() {
         int perimetro = 4*lado;
