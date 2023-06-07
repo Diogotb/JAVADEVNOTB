@@ -1,12 +1,23 @@
 package POOExercicio2;
 
+import javax.swing.JOptionPane;
+
 public class Agenda {
     //atributos
     String nome;
     int idade;
     double altura;
-    //construtor default
-    //sets and gets
+    //métodos
+    //construtor com parâmetros(valores atriobuidos na construção)
+    public Agenda(String nome, int idade, double altura) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+    }
+    //construtor vazio
+    public Agenda() {
+    }
+    //set and get
     public String getNome() {
         return nome;
     }
@@ -25,5 +36,14 @@ public class Agenda {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+    //métodos definidos pelo programador
+    //imprimir
+    public void imprimir() {
+        JOptionPane.showMessageDialog(null,
+        "Nome: "+nome
+        +"\nIdade: "+idade
+        +"\nAltura: "+altura);
+    }
+    
     
 }
