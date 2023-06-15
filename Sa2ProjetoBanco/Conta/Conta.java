@@ -1,7 +1,7 @@
 package Sa2ProjetoBanco.Conta;
 
 import javax.swing.JOptionPane;
-import javax.swing.JPopupMenu;
+
 
 public abstract class Conta {
     //atributos comuns

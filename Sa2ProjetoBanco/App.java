@@ -1,7 +1,6 @@
 package Sa2ProjetoBanco;
 
 import javax.swing.JOptionPane;
-import javax.swing.text.StyledEditorKit.BoldAction;
 
 import Sa2ProjetoBanco.Conta.ContaPJ;
 
