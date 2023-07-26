@@ -8,6 +8,7 @@ import RevisaoFPOO.Cadastro.Animal;
 public class App {
 
     public static void main(String[] args) {
-        //Animal obj1 = new Animal("Peixinho", 2, "Gato", "Diogo");
+        //
+        Animal obj1 = new Animal("Peixinho", 2, "Gato", "Diogo");
     }
 }
