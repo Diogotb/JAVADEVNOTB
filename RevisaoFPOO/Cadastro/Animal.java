@@ -4,14 +4,15 @@ public class Animal {
     //atributos
     String nome;
     double peso;
-    String especie;
+    String raca;
     String proprietario;
+    boolean carnivoro;
     //métodos
     //cosntrutor cheio
-    public Animal(String nome, double peso, String especie, String proprietario) {
+    public Animal(String nome, double peso, String raca, String proprietario) {
         this.nome = nome;
         this.peso = peso;
-        this.especie = especie;
+        this.raca = raca;
         this.proprietario = proprietario;
     }
     //construtor vazio
@@ -29,17 +30,27 @@ public class Animal {
     public void setPeso(double peso) {
         this.peso = peso;
     }
-    public String getEspecie() {
-        return especie;
+    public String getraca() {
+        return raca;
     }
-    public void setEspecie(String especie) {
-        this.especie = especie;
+    public void setraca(String raca) {
+        this.raca = raca;
     }
     public String getProprietario() {
         return proprietario;
     }
     public void setProprietario(String proprietario) {
         this.proprietario = proprietario;
+    }
+    public boolean isCarnivoro() {
+        return carnivoro;
+    }
+    public void setCarnivoro(int i) {
+        if(i==1){
+        this.carnivoro = true;
+        }else{
+            this.carnivoro = false;
+        }
     }
     
 
