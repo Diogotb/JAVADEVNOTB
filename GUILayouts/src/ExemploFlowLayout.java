@@ -1,5 +1,6 @@
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import java.awt.FlowLayout;
@@ -12,10 +13,19 @@ public class ExemploFlowLayout {
         FlowLayout flow = new FlowLayout();
         janela1.setLayout(flow);//atribui o layout
         //criar alguns componentes
-        janela1.add(new JButton("Nº de Botões"));
-        janela1.add(new JTextField("Insira o Texto", 25));
+        janela1.add(new JLabel("Nº de Botões: "));
+        JTextField campoTexto = new JTextField("Insira um Valor", 25);
+        janela1.add(campoTexto);
         JButton enviar = new JButton("Enviar");
         janela1.add(enviar);
+        //criar a ação do botão Enviar
+        enviar.addActionListener(e ->{
+            int valor = Integer.parseInt(campoTexto.getText());
+            for (int i = 0; i < valor; i++) {
+                janela1.add(new JButton(""+i+1));
+            }
+            janela1.pack();
+        });
         //seta os elementos da Janela
         janela1.setDefaultCloseOperation(1);
         janela1.pack();
